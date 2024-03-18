@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="DhikkrCompanion.DailyProgress"
+             Title="Daily Progress" BackgroundColor="Black">
+   <Border  StrokeThickness="10" x:Name="Border"
+                WidthRequest="330"  
+                HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand">
+            <Border.StrokeShape >
+                <RoundRectangle CornerRadius="40,0,0,40" />
+
+            </Border.StrokeShape>
+        <ScrollView>
+<VerticalStackLayout>
+     
+    <StackLayout HeightRequest="400" WidthRequest="330" Spacing="5" BackgroundColor="LightSlateGray" 
+                         VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand">
+        <!-- Labels will be dynamically added here in code-behind -->
+       
+
+        
+  
+      <Button Text="View Last 10 Days Progress"  FontSize="14" BackgroundColor="DarkGray" TextColor="Black"/>
+     <Button Text="View Last 30 Days Progress" x:Name="Generate10" FontSize="14" BackgroundColor="DarkGray" TextColor="Black"/>
+     <Button Text="View Last 60 Days Progress" x:Name="Generate30" FontSize="14" BackgroundColor="DarkGray" TextColor="Black"/>
+     <Button Text="View Last 180 Days Progress" x:Name="Generate180" FontSize="14" BackgroundColor="DarkGray" TextColor="Black"/>
+
+  
+    </StackLayout></VerticalStackLayout></ScrollView> </Border>
+</ContentPage>

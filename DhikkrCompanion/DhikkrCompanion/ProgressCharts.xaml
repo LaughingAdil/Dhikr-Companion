@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:micro="clr-namespace:Microcharts.Maui;assembly=Microcharts.Maui"
+             x:Class="DhikkrCompanion.ProgressCharts"
+             Title="Progress Charts 5 days" BackgroundColor="DarkSlateGray" >
+
+
+   <ScrollView >
+        <VerticalStackLayout Spacing="1"  >
+            
+            <HorizontalStackLayout Padding="5" Spacing="10" HorizontalOptions="CenterAndExpand" >
+               
+                <Button Text="View 10 Days" x:Name="tendays" Clicked="tendays_Clicked"
+                        BackgroundColor="#80000000" TextColor="White" FontSize="12"  />
+                <Button Text="View 30 Days" x:Name="thirtydays" Clicked="thirtydays_Clicked"
+                        BackgroundColor="#80000000" TextColor="White" FontSize="12"  />
+                <Button Text="View 180 Days" x:Name="oneeightydays" Clicked="oneeightydays_Clicked"
+                        BackgroundColor="#80000000" TextColor="White" FontSize="12" />
+            </HorizontalStackLayout>
+           
+           <micro:ChartView  x:Name="chartView1" HeightRequest="500"  />
+            <micro:ChartView  x:Name="chartView4" HeightRequest="500" />
+            <micro:ChartView  x:Name="chartView6" HeightRequest="500" />
+           <Button Text="View Data" BackgroundColor="DarkSlateGray" TextColor="White" FontSize="14"  x:Name="ViewData" Clicked="ViewData_Clicked"/>
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>

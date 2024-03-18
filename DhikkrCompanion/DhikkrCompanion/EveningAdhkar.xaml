@@ -1,0 +1,62 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<mopup:PopupPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:mopup = "clr-namespace:Mopups.Pages;assembly=Mopups"
+             xmlns:local = "clr-namespace:DhikkrCompanion"
+             x:Class="DhikkrCompanion.EveningAdhkar"
+             Title="EveningAdhkar" BackgroundColor="#80000000" CloseWhenBackgroundIsClicked="True">
+    <Border  StrokeThickness="10" 
+                WidthRequest="330" HeightRequest="700" 
+                HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand">
+            <Border.StrokeShape >
+                <RoundRectangle CornerRadius="40,0,0,40" />
+
+            </Border.StrokeShape>
+            <ScrollView VerticalOptions="FillAndExpand" VerticalScrollBarVisibility="Always" WidthRequest="330"  >    
+        <VerticalStackLayout  WidthRequest="330" Spacing="20" 
+                         BackgroundColor="DarkSlateGray"
+                         VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand">
+        
+
+    <Label Margin="25,20,25,0" TextDecorations="Underline" Text="Evening Adhkaar" FontSize="16" VerticalOptions="Center" HorizontalOptions="Center" TextColor="white" FontAttributes="Bold" />
+
+    <Label Text="Recite 1 time" VerticalOptions="Center" HorizontalOptions="Center" />
+    <Label Margin="30,0,30,0" Text="{x:Static local:Strings.AyatulkursiEnglish}" FontSize="16" VerticalOptions="Center" HorizontalOptions="Center" TextColor="white" FontAttributes="Bold" />
+    <Label Margin="30,0,30,0" Text="{x:Static local:Strings.AyatulkursiArabic}" FontSize="16" VerticalOptions="Center" HorizontalOptions="Center" TextColor="white" FontAttributes="Bold" />
+
+    <Label Text="Recite 1 time" VerticalOptions="Center" HorizontalOptions="Center" />
+    <Label Margin="30,0,30,0" Text="{x:Static local:Strings.baqaralastversesEnglish}" FontSize="16" VerticalOptions="Center" HorizontalOptions="Center" TextColor="white" FontAttributes="Bold" />
+    <Label Margin="30,0,30,0" Text="{x:Static local:Strings.baqaralastversesArabic}" FontSize="16" VerticalOptions="Center" HorizontalOptions="Center" TextColor="white" FontAttributes="Bold" />
+
+    <Label Text="Recite 3 time" VerticalOptions="Center" HorizontalOptions="Center" />
+    <Label Margin="30,0,30,0" Text="{x:Static local:Strings.falaqEnglish}" FontSize="16" VerticalOptions="Center" HorizontalOptions="Center" TextColor="white" FontAttributes="Bold" />
+    <Label Margin="30,0,30,0" Text="{x:Static local:Strings.falaqArabic}" FontSize="16" VerticalOptions="Center" HorizontalOptions="Center" TextColor="white" FontAttributes="Bold" />
+
+    <Label Text="Recite 3 time" VerticalOptions="Center" HorizontalOptions="Center" />
+    <Label Margin="30,0,30,0" Text="{x:Static local:Strings.nasEnglish}" FontSize="16" VerticalOptions="Center" HorizontalOptions="Center" TextColor="white" FontAttributes="Bold" />
+    <Label Margin="30,0,30,0" Text="{x:Static local:Strings.nasArabic}" FontSize="16" VerticalOptions="Center" HorizontalOptions="Center" TextColor="white" FontAttributes="Bold" />
+
+    <Label Text="Recite 1 time" VerticalOptions="Center" HorizontalOptions="Center" />
+    <Label Margin="30,0,30,0" Text="{x:Static local:Strings.dua5english}" FontSize="16" VerticalOptions="Center" HorizontalOptions="Center" TextColor="white" FontAttributes="Bold" />
+    <Label Margin="30,0,30,0" Text="{x:Static local:Strings.dua5arabic}" FontSize="16" VerticalOptions="Center" HorizontalOptions="Center" TextColor="white" FontAttributes="Bold" />
+
+    <Label Text="Recite 3 time" VerticalOptions="Center" HorizontalOptions="Center" />
+    <Label Margin="30,0,30,0" Text="{x:Static local:Strings.dua2english}" FontSize="16" VerticalOptions="Center" HorizontalOptions="Center" TextColor="white" FontAttributes="Bold" />
+    <Label Margin="30,0,30,0" Text="{x:Static local:Strings.dua2arabic}" FontSize="16" VerticalOptions="Center" HorizontalOptions="Center" TextColor="white" FontAttributes="Bold" />
+
+    <Label Text="Recite 3 time" VerticalOptions="Center" HorizontalOptions="Center" />
+    <Label Margin="30,0,30,0" Text="{x:Static local:Strings.dua6english}" FontSize="16" VerticalOptions="Center" HorizontalOptions="Center" TextColor="white" FontAttributes="Bold" />
+    <Label Margin="30,0,30,0" Text="{x:Static local:Strings.dua6arabic}" FontSize="16" VerticalOptions="Center" HorizontalOptions="Center" TextColor="white" FontAttributes="Bold" />
+
+    <Label Text="Recite 3 time" VerticalOptions="Center" HorizontalOptions="Center" />
+    <Label Margin="30,0,30,0" Text="{x:Static local:Strings.dua7english}" FontSize="16" VerticalOptions="Center" HorizontalOptions="Center" TextColor="white" FontAttributes="Bold" />
+    <Label Margin="30,0,30,10" Text="{x:Static local:Strings.dua7arabic}" FontSize="16" VerticalOptions="Center" HorizontalOptions="Center" TextColor="white" FontAttributes="Bold" />
+
+    
+
+    
+            
+            
+    </VerticalStackLayout></ScrollView></Border>
+</mopup:PopupPage>
+

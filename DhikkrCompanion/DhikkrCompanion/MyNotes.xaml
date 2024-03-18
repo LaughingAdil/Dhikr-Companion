@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<mopup:PopupPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="DhikkrCompanion.MyNotes"
+             xmlns:mopup = "clr-namespace:Mopups.Pages;assembly=Mopups"
+             Title="MyNotes" BackgroundColor="#80000000" CloseWhenBackgroundIsClicked="True">
+
+
+ <Border  StrokeThickness="10" x:Name="border"
+                WidthRequest="330" HeightRequest="500" 
+                HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand">
+            <Border.StrokeShape >
+                <RoundRectangle CornerRadius="40,0,0,40" />
+
+            </Border.StrokeShape>
+       
+         <VerticalStackLayout  x:Name="verticalstacklayout"
+                             BackgroundColor="DarkSlateGray"
+                             VerticalOptions="StartAndExpand" HorizontalOptions="CenterAndExpand">
+            
+            <Label x:Name="labelTitle" HorizontalOptions="CenterAndExpand" FontSize="16" Margin="0,10,0,10"
+                   Text="My Notes" TextColor="White"  FontAttributes="Bold"/>
+            
+            <Editor  x:Name="entry1" TextColor="Black" BackgroundColor="LightYellow"   TextChanged="entry1_TextChanged" 
+                   VerticalOptions="StartAndExpand" Placeholder="Type here..."
+                   HorizontalOptions="Center"  />
+
+            
+
+            <Button VerticalOptions="End" x:Name="btnClearNotes" Text="Clear Notes" BackgroundColor="DarkSlateGrey" FontAttributes="Bold" TextColor="White" FontSize="14" Clicked="ClearNotesButton_Clicked" />
+        </VerticalStackLayout></Border>
+</mopup:PopupPage>

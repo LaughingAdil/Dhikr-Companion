@@ -1,0 +1,112 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:maui = "clr-namespace:epj.RadialDial.Maui;assembly=epj.RadialDial.Maui"
+             x:Class="DhikkrCompanion.MainPage" BackgroundColor="#000000" Title="Dhikr Companion" >
+ 
+  
+    <StackLayout Margin="0"   VerticalOptions="FillAndExpand"   Spacing="80" HorizontalOptions="FillAndExpand" x:Name="mainpagelayout"  >
+      
+                <AbsoluteLayout VerticalOptions="Start" >
+      
+            
+
+            <Button AbsoluteLayout.LayoutFlags="PositionProportional" AbsoluteLayout.LayoutBounds="0,0, Autosize,Autosize"
+                    Text="&#xf303;" x:Name="MyNotes" TextColor="LightGray" FontSize="24" 
+                    FontFamily="FreeSolid900" Clicked="MyNotes_Clicked" HorizontalOptions="EndAndExpand" VerticalOptions="End"
+                    BackgroundColor="#000000" CornerRadius="30" HeightRequest="60" WidthRequest="60"/>
+            <Button AbsoluteLayout.LayoutFlags="PositionProportional" AbsoluteLayout.LayoutBounds="1,0, Autosize,Autosize"
+                    Text="&#xe098;" x:Name="dailyProgressButton" TextColor="LightGray" FontSize="24" 
+                    FontFamily="FreeSolid900" Clicked="dailyProgressButton_Clicked" HorizontalOptions="EndAndExpand"
+                     BackgroundColor="#000000" CornerRadius="30" HeightRequest="60" WidthRequest="60"/>
+      </AbsoluteLayout>
+        <HorizontalStackLayout HorizontalOptions="CenterAndExpand" Spacing="30" VerticalOptions="EndAndExpand">
+            
+            <Button Text="&#xf683;" x:Name="Dhikrpopupbutton" TextColor="LightGray" FontSize="22"
+                    FontFamily="FreeSolid900" Clicked="Dhikrpopupbutton_Clicked"
+                    BorderColor="DarkSlateGrey" BorderWidth="0" BackgroundColor="DarkSlateGray" CornerRadius="28" HeightRequest="56" WidthRequest="56"/>
+            <Button Text="&#xf66b;" x:Name="DhikrNamesPopUp" TextColor="LightGrey" FontSize="22"
+                    FontFamily="FreeSolid900" Clicked="DhikrNamesPopUp_Clicked"
+                    BorderColor="DarkSlateGray" BorderWidth="2" BackgroundColor="DarkSlateGray" CornerRadius="28" HeightRequest="56" WidthRequest="56"/>
+            
+            <Button Text="&#xf185;" x:Name="MorningAdhkar" TextColor="LightGray" FontSize="22"
+                    FontFamily="FreeSolid900" Clicked="MorningAdhkar_Clicked"
+                    BorderColor="DarkSlateGray" BorderWidth="2" BackgroundColor="DarkSlateGray" CornerRadius="28" HeightRequest="56" WidthRequest="56"/>
+            <Button Text="&#xf186;" x:Name="EveningAdhkar" TextColor="LightGray" FontSize="22"
+                    FontFamily="FreeSolid900" Clicked="EveningAdhkar_Clicked"
+                    BorderColor="DarkSlateGray" BorderWidth="2" BackgroundColor="DarkSlateGray" CornerRadius="28" HeightRequest="56" WidthRequest="56"/>
+            
+        </HorizontalStackLayout>
+<HorizontalStackLayout HorizontalOptions="CenterAndExpand"  >
+<VerticalStackLayout HorizontalOptions="StartAndExpand" VerticalOptions="CenterAndExpand" >
+  <Button x:Name="CounterButtontwo" FontSize="22" Text="0" CornerRadius="25" TextColor="LightGray" Padding="0"
+          HeightRequest="50" WidthRequest="50" BorderColor="DarkSlateGray" BorderWidth="2"  BackgroundColor="DarkSlateGray"/>
+  <Button x:Name="ResetCounters"  HeightRequest="50" WidthRequest="60" Text="&#xf021;" FontFamily="FreeSolid900" FontSize="24" TextColor="DarkSlateGray"
+          Clicked="ResetCounters_Clicked" BackgroundColor="#000000" />
+ </VerticalStackLayout>
+   <Grid HorizontalOptions="EndAndExpand"  >
+    <maui:RadialDial Grid.Column="0" Grid.Row="0" AnchorX="0.5" AnchorY="0.5"
+      x:Name="RadialControl"
+      
+      WidthRequest="320"
+      HeightRequest="320"
+      TouchInputEnabled="False"
+      DialWidth="{Binding Path=Value, Source={x:Reference DialWidthSlider}}"
+      DialColor="Orange"
+      BaseColor="#000000"
+      Min="0"
+      Max="33"
+      Value="0"
+      ShowScale="False"
+      ScaleColor="Yellow"
+      InternalPadding="10"
+      ScaleDistance="10"
+      ScaleLength="24"
+      ScaleThickness="8"
+      ScaleUnits="5"
+      UseGradient="True"
+      IgnorePixelScaling="False">
+      <maui:RadialDial.GradientColors>
+        <Color>DarkGreen</Color>
+        <Color>DarkGreen</Color>
+        <Color>LightGreen</Color>
+        <Color>DarkGreen</Color>
+        <Color>DarkGreen</Color>
+        <Color>LightGreen</Color>
+        <Color>YellowGreen</Color>
+        <Color>DarkGreen</Color>
+        <Color>Green</Color>
+       <Color>YellowGreen</Color>
+        <Color>DarkGreen</Color>
+        
+      </maui:RadialDial.GradientColors>
+    </maui:RadialDial>
+
+    <Button Grid.Column="0" Grid.Row="0" 
+     TextColor="LightGrey" 
+      x:Name="DhikkrButton"
+      Clicked="DhikkrButton_Clicked"
+      HorizontalOptions="Center"
+      FontSize="100"
+      BackgroundColor="DarkSlateGray" BorderWidth="2" BorderColor="DarkSlateGrey" 
+      CornerRadius="130"
+      HeightRequest="260"
+      WidthRequest="260"
+      Text="0"/>
+                    
+        </Grid>
+</HorizontalStackLayout>
+    <Slider 
+      x:Name="DialWidthSlider"
+      IsVisible="false"
+      Minimum="0"
+      Maximum="300"
+      Value="10"/>
+        
+
+ <Button BackgroundColor="#000000" x:Name="SupportMe" Clicked="SupportMe_Clicked"
+         Text="Buy me a coffee" FontSize="10" TextColor="Gray" FontAttributes="Bold"
+          VerticalOptions="End" HorizontalOptions="CenterAndExpand"/>
+  </StackLayout>
+  
+</ContentPage>

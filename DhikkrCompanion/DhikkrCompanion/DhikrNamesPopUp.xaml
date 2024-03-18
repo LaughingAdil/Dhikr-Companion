@@ -1,0 +1,117 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<mopup:PopupPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:mopup = "clr-namespace:Mopups.Pages;assembly=Mopups"
+             xmlns:local = "clr-namespace:DhikkrCompanion"
+             x:Class="DhikkrCompanion.DhikrNamesPopUp"
+             Title ="DhikrNamesPopUp" BackgroundColor="#80000000" CloseWhenBackgroundIsClicked="True" >
+
+
+    <Border  StrokeThickness="10" 
+                WidthRequest="330" HeightRequest="700" 
+                HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand">
+            <Border.StrokeShape >
+                <RoundRectangle CornerRadius="40,0,0,40" />
+
+            </Border.StrokeShape>
+            <ScrollView VerticalOptions="FillAndExpand" VerticalScrollBarVisibility="Always" WidthRequest="330"  >    
+        <VerticalStackLayout  WidthRequest="330" Spacing="20" 
+                         BackgroundColor="DarkSlateGray"
+                         VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand">
+        
+
+     <Label Margin="25,20,25,0" TextDecorations="Underline" Text="Allah's names for invocation" FontSize="16" VerticalOptions="Center" HorizontalOptions="Center" TextColor="white" FontAttributes="Bold" />
+
+    <Label Margin="30,0,30,0" Text="{x:Static local:Strings.name1}" FontSize="16" VerticalOptions="Center" HorizontalOptions="Center" TextColor="white" FontAttributes="Bold" />
+    <Label Margin="30,0,30,0" Text="{x:Static local:Strings.name1description}" FontSize="14" VerticalOptions="Center" HorizontalOptions="Center" TextColor="white" FontAttributes="Italic" />
+
+    <Label Margin="30,0,30,0" Text="{x:Static local:Strings.name2}" FontSize="16" VerticalOptions="Center" HorizontalOptions="Center" TextColor="white" FontAttributes="Bold" />
+    <Label Margin="30,0,30,0" Text="{x:Static local:Strings.name2description}" FontSize="14" VerticalOptions="Center" HorizontalOptions="Center" TextColor="white" FontAttributes="Italic" />
+
+    <Label Margin="30,0,30,0" Text="{x:Static local:Strings.name3}" FontSize="16" VerticalOptions="Center" HorizontalOptions="Center" TextColor="white" FontAttributes="Bold" />
+    <Label Margin="30,0,30,0" Text="{x:Static local:Strings.name3description}" FontSize="14" VerticalOptions="Center" HorizontalOptions="Center" TextColor="white" FontAttributes="Italic" />
+
+    <Label Margin="30,0,30,0" Text="{x:Static local:Strings.name4}" FontSize="16" VerticalOptions="Center" HorizontalOptions="Center" TextColor="white" FontAttributes="Bold" />
+    <Label Margin="30,0,30,0" Text="{x:Static local:Strings.name4description}" FontSize="14" VerticalOptions="Center" HorizontalOptions="Center" TextColor="white" FontAttributes="Italic" />
+
+    <Label Margin="30,0,30,0" Text="{x:Static local:Strings.name5}" FontSize="16" VerticalOptions="Center" HorizontalOptions="Center" TextColor="white" FontAttributes="Bold" />
+    <Label Margin="30,0,30,0" Text="{x:Static local:Strings.name5description}" FontSize="14" VerticalOptions="Center" HorizontalOptions="Center" TextColor="white" FontAttributes="Italic" />
+
+    <Label Margin="30,0,30,0" Text="{x:Static local:Strings.name6}" FontSize="16" VerticalOptions="Center" HorizontalOptions="Center" TextColor="white" FontAttributes="Bold" />
+    <Label Margin="30,0,30,0" Text="{x:Static local:Strings.name6description}" FontSize="14" VerticalOptions="Center" HorizontalOptions="Center" TextColor="white" FontAttributes="Italic" />
+
+    <Label Margin="30,0,30,0" Text="{x:Static local:Strings.name7}" FontSize="16" VerticalOptions="Center" HorizontalOptions="Center" TextColor="white" FontAttributes="Bold" />
+    <Label Margin="30,0,30,0" Text="{x:Static local:Strings.name7description}" FontSize="14" VerticalOptions="Center" HorizontalOptions="Center" TextColor="white" FontAttributes="Italic" />
+
+    <Label Margin="30,0,30,0" Text="{x:Static local:Strings.name8}" FontSize="16" VerticalOptions="Center" HorizontalOptions="Center" TextColor="white" FontAttributes="Bold" />
+    <Label Margin="30,0,30,0" Text="{x:Static local:Strings.name8description}" FontSize="14" VerticalOptions="Center" HorizontalOptions="Center" TextColor="white" FontAttributes="Italic" />
+
+    <Label Margin="30,0,30,0" Text="{x:Static local:Strings.name9}" FontSize="16" VerticalOptions="Center" HorizontalOptions="Center" TextColor="white" FontAttributes="Bold" />
+    <Label Margin="30,0,30,0" Text="{x:Static local:Strings.name9description}" FontSize="14" VerticalOptions="Center" HorizontalOptions="Center" TextColor="white" FontAttributes="Italic" />
+
+    <Label Margin="30,0,30,0" Text="{x:Static local:Strings.name10}" FontSize="16" VerticalOptions="Center" HorizontalOptions="Center" TextColor="white" FontAttributes="Bold" />
+    <Label Margin="30,0,30,0" Text="{x:Static local:Strings.name10description}" FontSize="14" VerticalOptions="Center" HorizontalOptions="Center" TextColor="white" FontAttributes="Italic" />
+
+    <Label Margin="30,0,30,0" Text="{x:Static local:Strings.name11}" FontSize="16" VerticalOptions="Center" HorizontalOptions="Center" TextColor="white" FontAttributes="Bold" />
+    <Label Margin="30,0,30,0" Text="{x:Static local:Strings.name11description}" FontSize="14" VerticalOptions="Center" HorizontalOptions="Center" TextColor="white" FontAttributes="Italic" />
+
+    <Label Margin="30,0,30,0" Text="{x:Static local:Strings.name12}" FontSize="16" VerticalOptions="Center" HorizontalOptions="Center" TextColor="white" FontAttributes="Bold" />
+    <Label Margin="30,0,30,0" Text="{x:Static local:Strings.name12description}" FontSize="14" VerticalOptions="Center" HorizontalOptions="Center" TextColor="white" FontAttributes="Italic" />
+
+    <Label Margin="30,0,30,0" Text="{x:Static local:Strings.name13}" FontSize="16" VerticalOptions="Center" HorizontalOptions="Center" TextColor="white" FontAttributes="Bold" />
+    <Label Margin="30,0,30,0" Text="{x:Static local:Strings.name13description}" FontSize="14" VerticalOptions="Center" HorizontalOptions="Center" TextColor="white" FontAttributes="Italic" />
+
+    <Label Margin="30,0,30,0" Text="{x:Static local:Strings.name14}" FontSize="16" VerticalOptions="Center" HorizontalOptions="Center" TextColor="white" FontAttributes="Bold" />
+    <Label Margin="30,0,30,0" Text="{x:Static local:Strings.name14description}" FontSize="14" VerticalOptions="Center" HorizontalOptions="Center" TextColor="white" FontAttributes="Italic" />
+
+    <Label Margin="30,0,30,0" Text="{x:Static local:Strings.name15}" FontSize="16" VerticalOptions="Center" HorizontalOptions="Center" TextColor="white" FontAttributes="Bold" />
+    <Label Margin="30,0,30,0" Text="{x:Static local:Strings.name15description}" FontSize="14" VerticalOptions="Center" HorizontalOptions="Center" TextColor="white" FontAttributes="Italic" />
+
+    <Label Margin="30,0,30,0" Text="{x:Static local:Strings.name16}" FontSize="16" VerticalOptions="Center" HorizontalOptions="Center" TextColor="white" FontAttributes="Bold" />
+    <Label Margin="30,0,30,0" Text="{x:Static local:Strings.name16description}" FontSize="14" VerticalOptions="Center" HorizontalOptions="Center" TextColor="white" FontAttributes="Italic" />
+
+    <Label Margin="30,0,30,0" Text="{x:Static local:Strings.name17}" FontSize="16" VerticalOptions="Center" HorizontalOptions="Center" TextColor="white" FontAttributes="Bold" />
+    <Label Margin="30,0,30,0" Text="{x:Static local:Strings.name17description}" FontSize="14" VerticalOptions="Center" HorizontalOptions="Center" TextColor="white" FontAttributes="Italic" />
+
+    <Label Margin="30,0,30,0" Text="{x:Static local:Strings.name18}" FontSize="16" VerticalOptions="Center" HorizontalOptions="Center" TextColor="white" FontAttributes="Bold" />
+    <Label Margin="30,0,30,0" Text="{x:Static local:Strings.name18description}" FontSize="14" VerticalOptions="Center" HorizontalOptions="Center" TextColor="white" FontAttributes="Italic" />
+
+    <Label Margin="30,0,30,0" Text="{x:Static local:Strings.name19}" FontSize="16" VerticalOptions="Center" HorizontalOptions="Center" TextColor="white" FontAttributes="Bold" />
+    <Label Margin="30,0,30,0" Text="{x:Static local:Strings.name19description}" FontSize="14" VerticalOptions="Center" HorizontalOptions="Center" TextColor="white" FontAttributes="Italic" />
+
+    <Label Margin="30,0,30,0" Text="{x:Static local:Strings.name20}" FontSize="16" VerticalOptions="Center" HorizontalOptions="Center" TextColor="white" FontAttributes="Bold" />
+    <Label Margin="30,0,30,0" Text="{x:Static local:Strings.name20description}" FontSize="14" VerticalOptions="Center" HorizontalOptions="Center" TextColor="white" FontAttributes="Italic" />
+
+    <Label Margin="30,0,30,0" Text="{x:Static local:Strings.name21}" FontSize="16" VerticalOptions="Center" HorizontalOptions="Center" TextColor="white" FontAttributes="Bold" />
+    <Label Margin="30,0,30,0" Text="{x:Static local:Strings.name21description}" FontSize="14" VerticalOptions="Center" HorizontalOptions="Center" TextColor="white" FontAttributes="Italic" />
+
+    <Label Margin="30,0,30,0" Text="{x:Static local:Strings.name22}" FontSize="16" VerticalOptions="Center" HorizontalOptions="Center" TextColor="white" FontAttributes="Bold" />
+    <Label Margin="30,0,30,0" Text="{x:Static local:Strings.name22description}" FontSize="14" VerticalOptions="Center" HorizontalOptions="Center" TextColor="white" FontAttributes="Italic" />
+
+    <Label Margin="30,0,30,0" Text="{x:Static local:Strings.name23}" FontSize="16" VerticalOptions="Center" HorizontalOptions="Center" TextColor="white" FontAttributes="Bold" />
+    <Label Margin="30,0,30,0" Text="{x:Static local:Strings.name23description}" FontSize="14" VerticalOptions="Center" HorizontalOptions="Center" TextColor="white" FontAttributes="Italic" />
+
+    <Label Margin="30,0,30,0" Text="{x:Static local:Strings.name24}" FontSize="16" VerticalOptions="Center" HorizontalOptions="Center" TextColor="white" FontAttributes="Bold" />
+    <Label Margin="30,0,30,0" Text="{x:Static local:Strings.name24description}" FontSize="14" VerticalOptions="Center" HorizontalOptions="Center" TextColor="white" FontAttributes="Italic" />
+
+    <Label Margin="30,0,30,0" Text="{x:Static local:Strings.name30}" FontSize="16" VerticalOptions="Center" HorizontalOptions="Center" TextColor="white" FontAttributes="Bold" />
+    <Label Margin="30,0,30,0" Text="{x:Static local:Strings.name30description}" FontSize="14" VerticalOptions="Center" HorizontalOptions="Center" TextColor="white" FontAttributes="Italic" />
+
+    <Label Margin="30,0,30,0" Text="{x:Static local:Strings.name26}" FontSize="16" VerticalOptions="Center" HorizontalOptions="Center" TextColor="white" FontAttributes="Bold" />
+    <Label Margin="30,0,30,0" Text="{x:Static local:Strings.name26description}" FontSize="14" VerticalOptions="Center" HorizontalOptions="Center" TextColor="white" FontAttributes="Italic" />
+
+    <Label Margin="30,0,30,0" Text="{x:Static local:Strings.name27}" FontSize="16" VerticalOptions="Center" HorizontalOptions="Center" TextColor="white" FontAttributes="Bold" />
+    <Label Margin="30,0,30,0" Text="{x:Static local:Strings.name27description}" FontSize="14" VerticalOptions="Center" HorizontalOptions="Center" TextColor="white" FontAttributes="Italic" />
+
+    <Label Margin="30,0,30,0" Text="{x:Static local:Strings.name28}" FontSize="16" VerticalOptions="Center" HorizontalOptions="Center" TextColor="white" FontAttributes="Bold" />
+    <Label Margin="30,0,30,0" Text="{x:Static local:Strings.name28description}" FontSize="14" VerticalOptions="Center" HorizontalOptions="Center" TextColor="white" FontAttributes="Italic" />
+
+    <Label Margin="30,0,30,0" Text="{x:Static local:Strings.name29}" FontSize="16" VerticalOptions="Center" HorizontalOptions="Center" TextColor="white" FontAttributes="Bold" />
+    <Label Margin="30,0,30,0" Text="{x:Static local:Strings.name29description}" FontSize="14" VerticalOptions="Center" HorizontalOptions="Center" TextColor="white" FontAttributes="Italic" />
+
+    <Label Margin="30,0,30,0" Text="{x:Static local:Strings.name30}" FontSize="16" VerticalOptions="Center" HorizontalOptions="Center" TextColor="white" FontAttributes="Bold" />
+    <Label Margin="30,0,30,30" Text="{x:Static local:Strings.name30description}" FontSize="14" VerticalOptions="Center" HorizontalOptions="Center" TextColor="white" FontAttributes="Italic" />
+            
+            
+    </VerticalStackLayout></ScrollView></Border>
+</mopup:PopupPage>

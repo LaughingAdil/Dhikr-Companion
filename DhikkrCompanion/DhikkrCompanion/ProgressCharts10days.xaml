@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:micro="clr-namespace:Microcharts.Maui;assembly=Microcharts.Maui"
+             x:Class="DhikkrCompanion.ProgressCharts10days"
+             Title="Progress Charts 10 days">
+
+
+    <ScrollView >
+        <VerticalStackLayout  >
+           <micro:ChartView  x:Name="chartView1" HeightRequest="500" />
+            <micro:ChartView  x:Name="chartView4" HeightRequest="500" />
+            <micro:ChartView  x:Name="chartView6" HeightRequest="500" />
+           
+        </VerticalStackLayout>
+    </ScrollView>
+
+
+</ContentPage>
